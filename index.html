@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
 </head>
 <body>
     <div class="card">
@@ -14,10 +14,13 @@
             <input type="text" class="search">
             <button class="button">Search</button>
         </div>
-        <div class="weather">
-            <h1 class="location">City Name</h1>
+        <div class="weather starting">
+            <h1 class="city">City Name</h1>
             <h2 class="temperature">Temp°C</h2>
-            <div class="description">Cloudy</div>
+            <div class="container">
+                <img src="" alt="" class="icon">
+                <div class="description">Cloudy</div>
+            </div>
             <div class="humidity">Humid</div>
         </div>
     </div>

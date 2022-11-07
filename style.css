@@ -13,7 +13,6 @@ body {
     background-image: url("https://source.unsplash.com/1600x900/?nature,forest");
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 .card {
@@ -50,3 +49,18 @@ input.search {
     padding: 0.33em;
     color: white;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+.starting {
+    visibility: hidden; 
+    max-height: 0;;
+}
+
