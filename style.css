@@ -9,14 +9,44 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(103, 109, 107);
+    background-color: #0c0505;
+    background-image: url("https://source.unsplash.com/1600x900/?nature,forest");
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 .card {
-    background-color: rgb(155, 101, 241);
+    background-color: #131623f0;
+    color: white;
     padding: 2em;
     margin: 1em;
     border-radius: 33px;
     width: 100%;
     max-width: 420px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 1.8em;
+    border-radius: 10px;
+}
+
+.button {
+    margin-left: 1em;
+    padding: 0.33em;
+    border-radius: 10px;
+    background: #6c6c6cf0;
+    border: none;
+    color: white;
+}
+
+input.search {
+    background: #6c6c6cf0;
+    outline: none;
+    padding: 0.33em;
+    color: white;
 }
