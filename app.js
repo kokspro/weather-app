@@ -12,10 +12,11 @@ let weatherApp = {
         const { name } = data;
         const { icon, description } = data.weather[0];
         const { temp, humidity } = data.main;
+        const tempC = ((temp - 32) * (5/9)).toFixed(2);
         console.log(name, icon, description, temp, humidity);
         document.querySelector(".city").innerText = `Weather in ${name}`;
         document.querySelector(".icon").src = `https://openweathermap.org/img/wn/${icon}.png`;
-        document.querySelector(".temperature").innerText = `${temp}°F`;
+        document.querySelector(".temperature").innerText = `${temp}°F / ${tempC}°C`;
         document.querySelector(".description").innerText = `${description}`;
         document.querySelector(".humidity").innerText = `Humidity: ${humidity}%`;  
         document.querySelector(".weather").classList.remove("starting");  
