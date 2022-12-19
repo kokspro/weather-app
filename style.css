@@ -10,7 +10,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #0c0505;
-    background-image: url("https://source.unsplash.com/1600x900/?nature,forest");
+    background-image: url("https://picsum.photos/1600/900/?");
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -32,6 +32,10 @@ body {
     border: none;
     height: 1.8em;
     border-radius: 10px;
+}
+
+::placeholder {
+    color: white;
 }
 
 .button {
@@ -63,4 +67,3 @@ input.search {
     visibility: hidden; 
     max-height: 0;
 }
-
